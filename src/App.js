@@ -45,13 +45,14 @@ function Root() {
     <>
       <div className="bg-[#f2f5f9]">
         <Header />
-        <NavigationBar />
+        <NavigationBar props={{ isHidden: "hidden" }} />
         <div className="mt-10 lg:mt-5 flex flex-col lg:flex-row gap-5">
           <SideBar />
-          <div className=" w-[840px] mr-5 h-[720px] border border-gray-300 rounded-xl">
+          <div className="bg-white w-[25rem] lg:w-[840px] mr-5 h-[800px]   rounded-xl">
             <Outlet />
           </div>
         </div>
+        {/* <NavigationBar props={{ isHidden: "lg:hidden" }} /> */}
       </div>
     </>
   );

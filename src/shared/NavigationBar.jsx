@@ -4,18 +4,19 @@ import { FaBlogger } from "react-icons/fa";
 import { GoNote, GoProjectSymlink } from "react-icons/go";
 import { NavLink } from "react-router-dom";
 
-export const NavigationBar = () => {
+export const NavigationBar = ({ props }) => {
+  const { isHidden } = props;
   return (
-    <div className="hidden w-full md:flex lg:flex justify-end">
-      <div className=" flex justify-center items-center gap-5 mr-5 w-[503px] border-gray-300 border h-[100px] mt-10 rounded-xl">
+    <div className={`${isHidden} w-full md:flex lg:flex justify-end`}>
+      <div className=" flex justify-center items-center gap-5 mr-5 w-[503px] shadow-sm  h-[100px] mt-10 rounded-xl">
         <NavLink
           to="/"
           className={({ isActive, isPending }) =>
             isPending
-              ? "rounded-xl w-[80px] bg-gray-300 h-[80px]"
+              ? "rounded-xl w-[80px] bg-[#e1e8ef] h-[80px]"
               : isActive
               ? "rounded-xl w-[80px] bg-purple-600 text-white h-[80px] transition delay-100  "
-              : "rounded-xl w-[80px] bg-gray-300 h-[80px]"
+              : "rounded-xl w-[80px] bg-[#e1e8ef] h-[80px]"
           }
         >
           <div className="flex flex-col justify-center items-center mt-5">
@@ -30,7 +31,7 @@ export const NavigationBar = () => {
               ? "rounded-xl w-[80px] bg-gray-300 h-[80px]"
               : isActive
               ? "rounded-xl w-[80px] bg-purple-600 text-white h-[80px] transition delay-100 "
-              : "rounded-xl w-[80px] bg-gray-300 h-[80px]"
+              : "rounded-xl w-[80px] bg-[#e1e8ef] h-[80px]"
           }
         >
           <div className="flex flex-col justify-center items-center mt-5">
@@ -45,7 +46,7 @@ export const NavigationBar = () => {
               ? "rounded-xl w-[80px] bg-gray-300 h-[80px]"
               : isActive
               ? "rounded-xl w-[80px] bg-purple-600 text-white h-[80px] transition delay-100 "
-              : "rounded-xl w-[80px] bg-gray-300 h-[80px]"
+              : "rounded-xl w-[80px] bg-[#e1e8ef] h-[80px]"
           }
         >
           <div className="flex flex-col justify-center items-center mt-5">
@@ -60,7 +61,7 @@ export const NavigationBar = () => {
               ? "rounded-xl w-[80px] bg-gray-300 h-[80px]"
               : isActive
               ? "rounded-xl w-[80px] bg-purple-600 text-white h-[80px] transition delay-100 "
-              : "rounded-xl w-[80px] bg-gray-300 h-[80px]"
+              : "rounded-xl w-[80px] bg-[#e1e8ef] h-[80px]"
           }
         >
           <div className="flex flex-col justify-center items-center mt-5">
@@ -75,7 +76,7 @@ export const NavigationBar = () => {
               ? "rounded-xl w-[80px] bg-gray-300 h-[80px]"
               : isActive
               ? "rounded-xl w-[80px] bg-purple-600 text-white h-[80px] transition delay-100 "
-              : "rounded-xl w-[80px] bg-gray-300 h-[80px]"
+              : "rounded-xl w-[80px] bg-[#e1e8ef] h-[80px]"
           }
         >
           <div className="flex flex-col justify-center items-center mt-5">

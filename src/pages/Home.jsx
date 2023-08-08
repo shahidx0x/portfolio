@@ -1,5 +1,10 @@
 import React from "react";
+import { Headings } from "../components/Headings";
 
 export const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <Headings props={"About Me"} />
+    </div>
+  );
 };

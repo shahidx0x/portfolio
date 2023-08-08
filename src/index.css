@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@1,300&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Pacifico&family=Poppins:wght@300&family=Roboto:ital,wght@1,300&display=swap");
 .sig {
-  font-family: "Pacifico", cursive;
+  font-family: "Poppins", sans-serif;
 }
